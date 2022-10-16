@@ -13,6 +13,8 @@ import {
   Typography,
   Divider,
   Price,
+  BoxButtons, 
+  Button,
 } from "./styles";
 
 export default function Home() {
@@ -40,12 +42,14 @@ export default function Home() {
             <Typography>Nº5</Typography>
             <Divider />
             <Price>$199.ºº</Price>
+            <BoxButtons>
+              <Button variant="outlined">Wishlist</Button>
+              <Button variant="contained">Add to Cart</Button>
+            </BoxButtons>
           </Row>
         </Info>
       </Content>
       <Footer />
     </PageWrapper>
-
-
   );
 }
