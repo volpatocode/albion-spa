@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colorSchemeType } from "../../types/types";
 
 export const Navbar = styled.div`
   padding: 1rem 0;
@@ -20,14 +21,23 @@ export const Stack = styled.div`
   align-items: center;
 `;
 
-export const Anchor = styled.a`
+export const Anchor = styled.a<colorSchemeType>`
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.95);
-
+  color: ${(props) =>
+    props.anchor == "white"
+      ? " rgba(255, 255, 255, 0.95)"
+      : " rgba(0, 0, 0, 0.95)"};
   transition: 200ms ease-in-out;
+  font-size: 1.1rem;
+  font-weight: ${(props) => (props.anchor == "black" ? "bold" : "400")};
 
   :hover {
-    color: rgba(255, 255, 255, 1);
-    text-shadow: 2px 2px 8px rgba(255, 255, 255, 1);
+    color: ${(props) =>
+      props.anchor == "white"
+        ? " rgba(255, 255, 255, 0.95)"
+        : " rgba(0, 0, 0, 0.95)"};
+    text-shadow: ${(props) =>
+      props.anchor == "white" ? "2px 2px 16px rgba(255, 255, 255, 0.95)" : ""};
+    text-decoration: underline;
   }
 `;
