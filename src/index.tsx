@@ -1,9 +1,14 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+import Product from "./pages/product";
 
-function Index() {
-
+export default function Index() {
   return (
-   <h1>teste</h1>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/catalogue/:productId" element={<Product/>} />
+      </Routes>
+    </Router>
+  );
 }
-
-export default Index
