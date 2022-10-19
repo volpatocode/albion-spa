@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CardList = styled.div`
   width: 100vw;
-  height: 25vh;
+  height: 20vh;
   background: rgb(0, 0, 0, 0.95);
   margin-left: calc(50% - 50vw);
 
@@ -13,7 +13,7 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 25vh;
+  height: 20vh;
   width: 100%;
   padding: 0 15%;
 

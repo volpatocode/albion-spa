@@ -1,6 +1,6 @@
 import Navbar from "../../components/Navbar";
 
-import { PageWrapper, Content, TitleBox, Title } from "./styles";
+import { PageWrapper, Content, MainContent, Image, TitleBox, Title } from "./styles";
 import CardList from "../../components/CardList";
 
 export default function Home() {
@@ -8,11 +8,14 @@ export default function Home() {
     <PageWrapper>
       <Navbar logo="black" anchor="black" />
       <Content>
-        <TitleBox>
-          <Title>be lupus</Title>
-          <Title style={{alignSelf: "flex-end"}} >be us</Title>
-        </TitleBox>
-        <CardList/>
+        <MainContent>
+          <TitleBox>
+            <Title>be lupus</Title>
+            <Title style={{ alignSelf: "flex-end" }}>be us</Title>
+          </TitleBox>
+          <Image src="/test3.png" />
+        </MainContent>
+        <CardList />
       </Content>
     </PageWrapper>
   );

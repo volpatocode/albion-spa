@@ -27,6 +27,7 @@ export const PageWrapper = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
   padding: 0 15%;
@@ -135,3 +136,10 @@ export const Price = styled.h2`
     text-decoration: underline;
   }
 `;
+
+export const Image = styled.img`
+    width: 25%;
+  margin: 3rem;
+   
+`;
+
