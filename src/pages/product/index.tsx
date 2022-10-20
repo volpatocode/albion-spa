@@ -30,25 +30,25 @@ export default function Product() {
       {products.map((product) => {
         return (
           product.id == productId && (
-            <Content>
+            <Content key={product?.id}>
               <Image src={`/${product.id}.png`} />
               <Info>
                 <Row>
-                  <Title> {product.name}</Title>
-                  <Legend>{product.reviews} reviews</Legend>
-                  <Typography>{product.description}</Typography>
+                  <Title> {product?.name}</Title>
+                  <Legend>{product?.reviews} reviews</Legend>
+                  <Typography>{product?.description}</Typography>
                   <Divider />
                 </Row>
                 <Row>
                   <Subtitle>Bottle Size:</Subtitle>
-                  <Typography>{product.size}</Typography>
+                  <Typography>{product?.size}</Typography>
                   <Divider />
                 </Row>
                 <Row>
                   <Subtitle>Perfume Type:</Subtitle>
-                  <Typography>{product.type}</Typography>
+                  <Typography>{product?.type}</Typography>
                   <Divider />
-                  <Price>${product.price}</Price>
+                  <Price>${product?.price}</Price>
                   <BoxButtons>
                     <Button variant="outlined">Wishlist</Button>
                     <Button variant="contained">Add to Cart</Button>
@@ -57,7 +57,7 @@ export default function Product() {
                 <Details>
                   <Row>
                     <Subtitle>Product Detail:</Subtitle>
-                    <Typography align="justify">{product.details}</Typography>
+                    <Typography align="justify">{product?.details}</Typography>
                   </Row>
                 </Details>
               </Info>

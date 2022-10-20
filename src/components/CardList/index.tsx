@@ -13,6 +13,7 @@ export default function index() {
           {products.map((product) => {
             return (
               <Card
+                key={product?.id}
                 href={`/catalogue/${product?.id}`}
                 src={`${product?.id}.png`}
                 productName={`${product?.name}`}

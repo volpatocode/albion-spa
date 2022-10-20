@@ -2,9 +2,9 @@ import Logo from "../Logo";
 import { colorSchemeType } from "../../types/types";
 import { Navbar, Container, Stack, Anchor } from "./styles";
 
-export default function index({ anchor, logo }: colorSchemeType) {
+export default function index({ anchor, navbg, logo }: colorSchemeType) {
   return (
-    <Navbar>
+    <Navbar navbg={navbg}>
       <Container>
         <Logo logo={logo} />
         <Stack>

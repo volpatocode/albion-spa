@@ -7,13 +7,13 @@ cursor: pointer;
   background-color: rgba(255, 255, 255, 0.95);
   padding: 2rem;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  transition: 150ms ease-in-out;
+  transition: all 300ms ease-in-out;
   :hover {
     transform: scale(1.05);
   }

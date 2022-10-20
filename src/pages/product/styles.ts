@@ -6,11 +6,13 @@ type buttonType = {
 
 type typographyType = {
   align?: string;
-}
+};
 
 export const PageWrapper = styled.div`
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  max-width: 100vw;
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 0.95) 0%,
@@ -46,7 +48,6 @@ export const Row = styled.div`
   gap: 0.7rem;
 `;
 
-
 export const Details = styled.div`
   display: flex;
   flex-direction: column;
@@ -75,7 +76,7 @@ export const Button = styled.button<buttonType>`
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 0.4px;
-  transition: 200ms ease-in-out;
+  transition: all 300ms ease-in-out;
   color: ${(props) =>
     props.variant == "outlined"
       ? "rgba(255, 255, 255, 0.95)"
@@ -121,7 +122,7 @@ export const Legend = styled.p`
 
 export const Typography = styled.p<typographyType>`
   color: rgba(255, 255, 255, 0.7);
-  text-align: ${props => props.align == "justify" ? "justify" : "start"};
+  text-align: ${(props) => (props.align == "justify" ? "justify" : "start")};
 `;
 
 export const Price = styled.h2`
@@ -138,8 +139,6 @@ export const Price = styled.h2`
 `;
 
 export const Image = styled.img`
-    width: 25%;
+  width: 20%;
   margin: 3rem;
-   
 `;
-
