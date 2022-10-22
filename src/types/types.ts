@@ -1,10 +1,10 @@
-
+import { ReactNode } from "react";
 
 export type anchorType = {
-  anchor?: any;
+  anchor?: string;
 };
 
 export type navbarType = {
   page?: "home" | "product";
-  anchor?: anchorType;
+  anchor?: ReactNode;
 };

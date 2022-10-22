@@ -3,6 +3,8 @@ import useScrollPosition from "../../hooks/useScrollPosition";
 import { navbarType } from "../../types/types";
 
 
+
+
 export default function index({ anchor, page }: navbarType) {
   const scrollPosition = useScrollPosition();
 
