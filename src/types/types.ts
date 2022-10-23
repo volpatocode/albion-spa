@@ -7,4 +7,5 @@ export type anchorType = {
 export type navbarType = {
   page?: "home" | "product";
   anchor?: ReactNode;
+  color?: "white" | "black";
 };

@@ -1,17 +1,24 @@
 import Logo from "../Logo";
-import { colorSchemeType } from "../../types/types";
-import { Navbar, Container, Stack, Anchor } from "./styles";
+import { navbarType } from "../../types/types";
+import { Navbar, Container, Stack } from "./styles";
+import Anchor from "../Anchor";
+import useScrollPosition from "../../hooks/useScrollPosition";
 
-export default function index({ anchor, navbg, logo }: colorSchemeType) {
+export default function index({ page, color }: navbarType) {
+  const scrollPosition = useScrollPosition();
+
   return (
-    <Navbar navbg={navbg}>
+    <Navbar
+      style={scrollPosition > 5 ? { background: "black" } : { color: "white" }}
+      page={page}
+      color="white"
+    >
       <Container>
-        <Logo logo={logo} />
+        <Logo />
         <Stack>
-          <Anchor anchor={anchor}>Home</Anchor>
-          <Anchor anchor={anchor}>About</Anchor>
-          <Anchor anchor={anchor}>Catalogue</Anchor>
-          <Anchor anchor={anchor}>Contact</Anchor>
+          <Anchor page={page} anchor="Home" />
+          <Anchor page={page} anchor="About" />
+          <Anchor page={page} anchor="Contact" />
         </Stack>
       </Container>
     </Navbar>

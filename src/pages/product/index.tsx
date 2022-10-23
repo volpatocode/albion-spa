@@ -26,7 +26,7 @@ export default function Product() {
 
   return (
     <PageWrapper>
-      <Navbar logo="black" anchor="white" />
+      <Navbar page="product" />
       {products.map((product) => {
         return (
           product.id == productId && (

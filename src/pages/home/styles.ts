@@ -4,7 +4,7 @@ export const PageWrapper = styled.div`
   max-height: 100vh;
   width: 100vw;
   height: 100vh;
-    background: rgba(255, 255, 255, 0.95); 
+  background: rgba(255, 255, 255, 0.95);
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -41,6 +41,4 @@ export const Title = styled.h1`
   font-size: 4rem;
   color: rgba(0, 0, 0, 0.95);
   letter-spacing: 2px;
-
-  
 `;

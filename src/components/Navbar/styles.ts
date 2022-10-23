@@ -1,19 +1,21 @@
 import styled from "styled-components";
-import { colorSchemeType } from "../../types/types";
+import { navbarType } from "../../types/types";
 
-export const Navbar = styled.div<Pick<colorSchemeType, "navbg">>`
+
+export const Navbar = styled.div<navbarType>`
   padding: 1rem 0;
   transition: all 300ms ease-in-out;
   background-color: ${(props) => {
-    switch (props.navbg) {
-      case "white":
+    switch (props.page) {
+      case "home":
         return "rgba(255, 255, 255, 0.95)";
-      case "black":
-        return "rgba(0, 0, 0, 0.95)";
+      case "product":
+        return "transparent";
     }
   }};
   position: sticky;
   top: 0;
+
 `;
 
 export const Container = styled.div`
@@ -31,29 +33,3 @@ export const Stack = styled.div`
   align-items: center;
 `;
 
-export const Anchor = styled.a<Pick<colorSchemeType, "anchor">>`
-  cursor: pointer;
-  color: ${(props) => {
-    switch (props.anchor) {
-      case "white":
-        return "rgba(255, 255, 255, 0.95)";
-      case "black":
-        return "rgba(0, 0, 0, 0.95)";
-    }
-  }};
-  transition: all 300ms ease-in-out;
-  font-size: 1.1rem;
-  font-weight: bold;
-
-  :hover {
-    color: ${(props) => {
-      switch (props.anchor) {
-        case "white":
-          return "rgba(255, 255, 255, 0.95)";
-        case "black":
-          return "rgba(0, 0, 0, 0.95)";
-      }
-    }};
-    text-decoration: underline;
-  }
-`;
