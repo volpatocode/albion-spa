@@ -39,6 +39,6 @@ export const TitleBox = styled.div`
 
 export const Title = styled.h1`
   font-size: 4rem;
-  color: rgba(0, 0, 0, 0.95);
+  color: #0D0D0D;
   letter-spacing: 2px;
 `;

@@ -5,7 +5,6 @@ export type anchorType = {
 };
 
 export type navbarType = {
-  page?: "home" | "product";
+  page?: "home" | "product" | "about" | "contact";
   anchor?: ReactNode;
-  color?: "white" | "black";
 };

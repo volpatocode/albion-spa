@@ -4,14 +4,17 @@ import { Navbar, Container, Stack } from "./styles";
 import Anchor from "../Anchor";
 import useScrollPosition from "../../hooks/useScrollPosition";
 
-export default function index({ page, color }: navbarType) {
+export default function index({ page }: navbarType) {
   const scrollPosition = useScrollPosition();
 
   return (
     <Navbar
-      style={scrollPosition > 5 ? { background: "black" } : { color: "white" }}
+      style={
+        scrollPosition > 5
+          ? { background: "#0D0D0D" }
+          : { color: "rgba(255, 255, 255, 0.95)" }
+      }
       page={page}
-      color="white"
     >
       <Container>
         <Logo />

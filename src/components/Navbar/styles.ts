@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { navbarType } from "../../types/types";
 
-
 export const Navbar = styled.div<navbarType>`
   padding: 1rem 0;
   transition: all 300ms ease-in-out;
@@ -11,11 +10,12 @@ export const Navbar = styled.div<navbarType>`
         return "rgba(255, 255, 255, 0.95)";
       case "product":
         return "transparent";
+      case "about":
+        return "#0D0D0D";
     }
   }};
   position: sticky;
   top: 0;
-
 `;
 
 export const Container = styled.div`
@@ -32,4 +32,3 @@ export const Stack = styled.div`
   gap: 2rem;
   align-items: center;
 `;
-

@@ -16,7 +16,6 @@ export default function Home() {
     <PageWrapper>
       <Navbar
         page="home"
-        color="white"
       />
       <Content>
         <MainContent>

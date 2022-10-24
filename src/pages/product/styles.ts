@@ -17,8 +17,8 @@ export const PageWrapper = styled.div`
     to right,
     rgba(255, 255, 255, 0.95) 0%,
     rgba(255, 255, 255, 0.95) 30%,
-    rgba(0, 0, 0, 0.95) 30%,
-    rgba(0, 0, 0, 0.95) 100%
+    #0d0d0d 30%,
+    #0d0d0d 100%
   );
   display: flex;
   flex-direction: column;
@@ -78,24 +78,16 @@ export const Button = styled.button<buttonType>`
   letter-spacing: 0.4px;
   transition: all 300ms ease-in-out;
   color: ${(props) =>
-    props.variant == "outlined"
-      ? "rgba(255, 255, 255, 0.95)"
-      : "rgba(0, 0, 0, 0.95)"};
+    props.variant == "outlined" ? "rgba(255, 255, 255, 0.95)" : "#0D0D0D"};
   background-color: ${(props) =>
-    props.variant == "outlined"
-      ? "rgba(0, 0, 0, 0.95)"
-      : "rgba(255, 255, 255, 0.95)"};
+    props.variant == "outlined" ? "#0D0D0D" : "rgba(255, 255, 255, 0.95)"};
   width: ${(props) => (props.variant == "outlined" ? "40%" : "60%")};
 
   :hover {
     background-color: ${(props) =>
-      props.variant == "outlined"
-        ? "rgba(255, 255, 255, 0.95)"
-        : "rgba(0, 0, 0, 0.95)"};
+      props.variant == "outlined" ? "rgba(255, 255, 255, 0.95)" : "#0D0D0D"};
     color: ${(props) =>
-      props.variant == "outlined"
-        ? " rgba(0, 0, 0, 0.95)"
-        : " rgba(255, 255, 255, 0.95)"};
+      props.variant == "outlined" ? "#0D0D0D" : " rgba(255, 255, 255, 0.95)"};
   }
 `;
 

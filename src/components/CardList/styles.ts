@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CardList = styled.div`
   width: 100vw;
   height: 20vh;
-  background: rgb(0, 0, 0, 0.95);
+  background: #0D0D0D;
   margin-left: calc(50% - 50vw);
 
 `;
