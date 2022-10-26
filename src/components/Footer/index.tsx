@@ -17,12 +17,12 @@ export default function index() {
   return (
     <Wrapper>
       <Footer>
-        <Row style={{ justifyContent: "space-between" }}>
+        <Row >
           <TitleBox>
-            <Title style={{ marginRight: "2rem" }}>Let's work</Title>
-            <Title style={{ alignSelf: "flex-end" }}>together</Title>
+            <Title >Let's work</Title>
+            <Title >together</Title>
           </TitleBox>
-          <Typography style={{marginTop: "3rem"}}>
+          <Typography>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptatibus aperiam, odio impedit est maxime aliquam quis
             repudiandae nemo, maiores alias neque molestiae magni voluptatem

@@ -2,6 +2,7 @@ import Navbar from "../../components/Navbar";
 
 import {
   PageWrapper,
+  MainView,
   Content,
   MainContent,
   Image,
@@ -9,11 +10,13 @@ import {
   Title,
 } from "./styles";
 import CardList from "../../components/CardList";
+import Footer from "../../components/Footer";
 
 export default function Home() {
 
   return (
     <PageWrapper>
+      <MainView>
       <Navbar
         page="home"
       />
@@ -27,6 +30,8 @@ export default function Home() {
         </MainContent>
         <CardList />
       </Content>
+      </MainView>
+      <Footer/>
     </PageWrapper>
   );
 }

@@ -19,9 +19,9 @@ export default function index({ page }: navbarType) {
       <Container>
         <Logo />
         <Stack>
-          <Anchor page={page} anchor="Home" />
-          <Anchor page={page} anchor="About" />
-          <Anchor page={page} anchor="Contact" />
+          <Anchor page={page} anchor="Home" href="/" />
+          <Anchor page={page} anchor="About" href="/about" />
+          <Anchor page={page} anchor="Contact" href="/contact" />
         </Stack>
       </Container>
     </Navbar>

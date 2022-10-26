@@ -1,10 +1,16 @@
 import styled from "styled-components";
 
 export const PageWrapper = styled.div`
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+`;
+
+export const MainView = styled.div`
   max-height: 100vh;
+  max-width: 100vw;
   width: 100vw;
   height: 100vh;
-  background: rgba(255, 255, 255, 0.95);
   display: flex;
   flex-direction: column;
   gap: 3rem;

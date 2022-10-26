@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const CardList = styled.div`
+max-width: 100vw;
   width: 100vw;
   height: 20vh;
   background: #0D0D0D;

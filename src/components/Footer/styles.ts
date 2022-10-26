@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   background-color: #0d0d0d;
-  padding: 4rem 0;
+  padding: 4rem 0 0 0;
+  max-width: 100vw;
+  width: 100vw;
 `;
 
 export const Footer = styled.div`
@@ -10,6 +12,7 @@ export const Footer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10rem;
+
 `;
 
 export const Row = styled.div`
@@ -24,7 +27,6 @@ export const Row = styled.div`
 export const TitleBox = styled.div`
   display: flex;
   flex-direction: column;
-  width: fit-content;
 `;
 
 export const Title = styled.h1`
@@ -81,5 +83,5 @@ export const Copyright = styled.p`
 display: grid;
 padding: 1rem;
 place-items: center;
-  color: rgba(255, 255, 255, 0.6);
+color: rgba(255, 255, 255, 0.6);
 `;
