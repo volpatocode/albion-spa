@@ -10,8 +10,6 @@ type typographyType = {
 
 export const PageWrapper = styled.div`
   width: 100vw;
-  height: 100vh;
-  max-height: 100vh;
   max-width: 100vw;
   background: linear-gradient(
     to right,
@@ -22,8 +20,15 @@ export const PageWrapper = styled.div`
   );
   display: flex;
   flex-direction: column;
+`;
+
+export const MainView = styled.div`
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
   gap: 3rem;
-  justify-content: space-between;
 `;
 
 export const Content = styled.div`
@@ -33,6 +38,7 @@ export const Content = styled.div`
   justify-content: space-between;
   width: 100%;
   padding: 0 15%;
+  justify-self: center;
 `;
 
 export const Info = styled.div`

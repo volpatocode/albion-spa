@@ -5,6 +5,7 @@ import { products } from "../../data/data";
 
 import {
   PageWrapper,
+  MainView,
   Content,
   Info,
   Row,
@@ -26,6 +27,7 @@ export default function Product() {
 
   return (
     <PageWrapper>
+      <MainView>
       <Navbar page="product" />
       {products.map((product) => {
         return (
@@ -65,6 +67,7 @@ export default function Product() {
           )
         );
       })}
+      </MainView>
       <Footer />
     </PageWrapper>
   );
