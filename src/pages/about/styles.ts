@@ -27,6 +27,16 @@ export const SectionWrapper = styled.div`
   background: rgba(255, 255, 255, 0.95);
   gap:1rem;
 
+  @media (max-width: 1000px) {
+    padding: 3rem 10%;
+  }
+  @media (max-width: 600px) {
+    padding: 3rem 5%;
+}
+@media (max-width: 400px) {
+    padding: 3rem 3%;
+}
+
 `;
 
 export const Section = styled.div`
@@ -48,6 +58,15 @@ export const MainContent = styled.div`
   height: 100%;
   padding: 0 15%;
   gap: 1rem;
+  @media (max-width: 1000px) {
+    padding: 0 10%;
+  }
+  @media (max-width: 600px) {
+    padding: 0 5%;
+}
+@media (max-width: 400px) {
+    padding: 0 3%;
+}
 `;
 
 export const InfoWrapper = styled.div`

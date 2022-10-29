@@ -13,6 +13,16 @@ export const Footer = styled.div`
   flex-direction: column;
   gap: 10rem;
 
+  @media (max-width: 1000px) {
+    padding: 0 10%;
+  }
+  @media (max-width: 600px) {
+    padding: 0 5%;
+}
+@media (max-width: 400px) {
+    padding: 0 3%;
+}
+
 `;
 
 export const Row = styled.div`

@@ -23,6 +23,15 @@ export const Content = styled.div`
   width: 100%;
   height: 100%;
   padding: 0 15%;
+  @media (max-width: 1000px) {
+    padding: 0 10%;
+  }
+  @media (max-width: 600px) {
+    padding: 0 5%;
+}
+@media (max-width: 400px) {
+    padding: 0 3%;
+}
 `;
 
 export const MainContent = styled.div`

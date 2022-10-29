@@ -17,6 +17,15 @@ export const Container = styled.div`
   height: 20vh;
   width: 100%;
   padding: 0 15%;
+  @media (max-width: 1000px) {
+    padding: 0 10%;
+  }
+  @media (max-width: 600px) {
+    padding: 0 5%;
+}
+@media (max-width: 400px) {
+    padding: 0 3%;
+}
 
 `;
 
