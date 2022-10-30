@@ -7,16 +7,14 @@ export const PageWrapper = styled.div`
 `;
 
 export const MainView = styled.div`
-  max-height: 100vh;
   max-width: 100vw;
+  min-height: 100vh;
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 3rem;
   @media (max-width: 600px) {
- max-height: none;
- height: fit-content;
+  height: fit-content;
 }
 `;
 
@@ -27,12 +25,12 @@ export const Content = styled.div`
   width: 100%;
   height: 100%;
   padding: 0 15%;
+  gap: 5rem;
   @media (max-width: 1000px) {
     padding: 0 10%;
   }
   @media (max-width: 600px) {
     padding: 0 5%;
-    gap: 3rem;
 }
 @media (max-width: 400px) {
     padding: 0 3%;
@@ -51,12 +49,13 @@ export const MainContent = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 18%;
+  height: 48vh;
   margin-right: 3rem;
+  @media (max-width: 1000px) {
+    margin: 0;
+}
   @media (max-width: 600px) {
     order: -1;
-    width: 50%;
-    margin: 0;
 }
 `;
 

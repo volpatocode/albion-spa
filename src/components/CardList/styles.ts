@@ -3,12 +3,10 @@ import styled from "styled-components";
 export const CardList = styled.div`
 max-width: 100vw;
   width: 100vw;
-  height: 20vh;
   background: #0D0D0D;
+  padding: 2rem 0;
   margin-left: calc(50% - 50vw);
-  @media (max-width: 600px) {
-    height: fit-content;
-}
+  margin-bottom: 3rem;
 
 `;
 
@@ -17,16 +15,16 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  height: 15vh;
   width: 100%;
   padding: 0 15%;
   @media (max-width: 1000px) {
     padding: 0 10%;
+    flex-direction: column;
+    height: fit-content;
   }
   @media (max-width: 600px) {
     padding: 0 5%;
-    flex-direction: column;
-    height: fit-content;
 }
 @media (max-width: 400px) {
     padding: 0 3%;
@@ -37,11 +35,15 @@ export const Container = styled.div`
 export const InfoBox = styled.div`
   display: flex;
   justify-content: center;
+  padding: 1rem;
   align-items: center;
-  padding: 2rem;
   height: 100%;
   border-left: 0.4px solid rgb(255, 255, 255, 0.95);
   border-right: 0.4px solid rgb(255, 255, 255, 0.95);
+  @media (max-width: 1000px) {
+    border: none;
+    border-bottom: 0.4px solid rgb(255, 255, 255, 0.95);
+}
 `;
 
 export const Info = styled.h3`
@@ -57,7 +59,8 @@ export const CardBox = styled.div`
   width: 100%;
   height: 100%;
   padding-left: 2rem;
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
+    padding-left: 0rem;
 }
 `;
