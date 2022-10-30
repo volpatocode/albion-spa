@@ -71,19 +71,16 @@ export default function Home() {
         </Section>
         <Section>
           <Image
-            style={{ width: "80%", alignSelf: "flex-end" }}
+            style={{ width: "100%", height: "100%", aspectRatio: "4/4" }}
             src="/holding.jpg"
           />
-          <BoxTitle style={{ width: "80%", alignSelf: "flex-end" }}>
-            Discover our product
-          </BoxTitle>
-          <BoxDescription style={{ width: "80%", alignSelf: "flex-end", maxWidth: "none" }}>
+          <BoxTitle>Discover our product</BoxTitle>
+          <BoxDescription>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint amet
             consectetur adipisicing.
           </BoxDescription>
         </Section>
       </SectionWrapper>
-
       <Footer />
     </PageWrapper>
   );

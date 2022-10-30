@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
-
 export const MainView = styled.div`
   background: #0d0d0d;
-  max-height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   max-width: 100vw;
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
+  @media (max-width: 1000px) {
+    padding-bottom: 2rem;
+  }
 `;
 
 export const PageWrapper = styled.div`
@@ -25,29 +27,32 @@ export const SectionWrapper = styled.div`
   display: flex;
   flex-direction: row;
   background: rgba(255, 255, 255, 0.95);
-  gap:1rem;
+  gap: 1rem;
 
   @media (max-width: 1000px) {
     padding: 3rem 10%;
+    flex-direction: column;
   }
   @media (max-width: 600px) {
     padding: 3rem 5%;
-}
-@media (max-width: 400px) {
+  }
+  @media (max-width: 400px) {
     padding: 3rem 3%;
-}
-
+  }
 `;
 
 export const Section = styled.div`
-  padding: 3rem 0; 
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
   background: rgba(255, 255, 255, 0.95);
   width: 50%;
+  @media (max-width: 1000px) {
+    width: 100%;
+    padding: 0%;
+  }
 `;
-
 
 export const MainContent = styled.div`
   display: flex;
@@ -60,13 +65,14 @@ export const MainContent = styled.div`
   gap: 1rem;
   @media (max-width: 1000px) {
     padding: 0 10%;
+    flex-direction: column;
   }
   @media (max-width: 600px) {
     padding: 0 5%;
-}
-@media (max-width: 400px) {
+  }
+  @media (max-width: 400px) {
     padding: 0 3%;
-}
+  }
 `;
 
 export const InfoWrapper = styled.div`
@@ -74,6 +80,10 @@ export const InfoWrapper = styled.div`
   flex-direction: column;
   width: 50%;
   gap: 3rem;
+  @media (max-width: 1000px) {
+    width: 100%;
+    gap: 1.5rem;
+  }
 `;
 
 export const SubInfoWrapper = styled.div`
@@ -84,11 +94,19 @@ export const SubInfoWrapper = styled.div`
   width: 100%;
   justify-content: space-between;
   padding: 1rem 0 0 1rem;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    border: none;
+    gap: 1rem;
+  }
 `;
 
 export const MainTitle = styled.h1`
   font-size: 3rem;
   color: rgba(255, 255, 255, 0.95);
+  @media (max-width: 1000px) {
+    text-align: center;
+  }
 `;
 
 export const MainSubtitle = styled.p`
@@ -96,12 +114,17 @@ export const MainSubtitle = styled.p`
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.65;
-  max-width: 40%;
+  width: 40%;
   text-align: justify;
+  @media (max-width: 1000px) {
+    order: -1;
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 export const Anchor = styled.a`
-cursor: pointer;
+  cursor: pointer;
   font-weight: 600;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
@@ -116,15 +139,19 @@ cursor: pointer;
       color: rgba(255, 255, 255, 0.5);
     }
     100% {
-     color: rgba(255, 255, 255, 0.8);
+      color: rgba(255, 255, 255, 0.8);
     }
   }
 `;
 
 export const Image = styled.img`
   width: 50%;
-  height: 100%;
+  height: 90vh;
   object-fit: cover;
+  @media (max-width: 1000px) {
+    width: 100%;
+    order: -1;
+  }
 `;
 export const Box = styled.div`
   display: flex;
@@ -136,7 +163,7 @@ export const Box = styled.div`
   width: 100%;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.8);
   &:last-child {
-  border: none;
+    border: none;
   }
 `;
 export const BoxTitle = styled.h1`
@@ -153,7 +180,4 @@ export const BoxDescription = styled.p`
   line-height: 1.65;
   text-align: justify;
   display: flex;
-  align-self: flex-end;
-  max-width: 50%;
 `;
-
