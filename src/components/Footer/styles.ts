@@ -18,6 +18,7 @@ export const Footer = styled.div`
   }
   @media (max-width: 600px) {
     padding: 0 5%;
+    gap: 4rem;
 }
 @media (max-width: 400px) {
     padding: 0 3%;
@@ -32,6 +33,13 @@ export const Row = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   gap: 2rem;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+}
+
+
 `;
 
 export const TitleBox = styled.div`
@@ -52,18 +60,30 @@ export const Subtitle = styled.p`
   line-height: 1.65;
   max-width: 40%;
   text-align: justify;
+
+  @media (max-width: 600px) {
+    max-width: none;
+}
+
 `;
 
 export const Typography = styled.p`
   color: rgba(255, 255, 255, 0.7);
-  width: 40%;
+  max-width: 40%;
   text-align: justify;
+  @media (max-width: 600px) {
+    max-width: none;
+    text-align: center;
+}
 `;
 
 export const AnchorList = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  @media (max-width: 600px) {
+   align-items: center;
+}
 `;
 
 export const Anchor = styled.a`

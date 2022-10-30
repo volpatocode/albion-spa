@@ -38,7 +38,7 @@ export default function Home() {
           <Image src="/blackandwhite.jpg" />
         </MainContent>
       </MainView>
-      <SectionWrapper>
+      <SectionWrapper id="content">
         <Section>
           <Box>
             <BoxTitle>Planing</BoxTitle>
