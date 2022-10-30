@@ -17,7 +17,7 @@ export default function index() {
   return (
     <Wrapper>
       <Footer>
-        <Row >
+        <Row className="footer-header">
           <TitleBox>
             <Title >Let's work</Title>
             <Title >together</Title>

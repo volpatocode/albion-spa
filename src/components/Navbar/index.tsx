@@ -3,10 +3,12 @@ import { navbarType } from "../../types/types";
 import { Navbar, Container, Stack } from "./styles";
 import Anchor from "../Anchor";
 import useScrollPosition from "../../hooks/useScrollPosition";
+import Menu from "../Menu";
+import useWindowSize from "../../hooks/useWindowSize";
 
 export default function index({ page }: navbarType) {
   const scrollPosition = useScrollPosition();
-
+  const {width, height} = useWindowSize();
   return (
     <Navbar
       style={
@@ -18,11 +20,15 @@ export default function index({ page }: navbarType) {
     >
       <Container>
         <Logo />
-        <Stack>
-          <Anchor page={page} anchor="Home" href="/" />
-          <Anchor page={page} anchor="About" href="/about" />
-          <Anchor page={page} anchor="Contact" href="/contact" />
-        </Stack>
+        {/* {!screenSm ? (
+          <Stack>
+            <Anchor page={page} anchor="Home" href="/" />
+            <Anchor page={page} anchor="About" href="/about" />
+            <Anchor page={page} anchor="Contact" href="/contact" />
+          </Stack>
+        ) : (
+          <Menu />
+        )} */}
       </Container>
     </Navbar>
   );
