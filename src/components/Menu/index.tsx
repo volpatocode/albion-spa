@@ -1,46 +1,34 @@
 import { useState } from "react";
-import { Menu } from "./styles";
+import useScrollPosition from "../../hooks/useScrollPosition";
+import { Menu, MenuContainer, MenuLine } from "./styles";
 
 export default function index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const scrollPosition = useScrollPosition();
 
   const handleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   return (
     <Menu onClick={handleMenu}>
-      <nav>
-        <div className="navbar">
-          <div className="container nav-container">
-            <input className="checkbox" type="checkbox" name="" id="" />
-            <div className="hamburger-lines">
-              <span className="line line1"></span>
-              <span className="line line2"></span>
-              <span className="line line3"></span>
-            </div>
-            <div className="logo">
-              <h1>Navbar</h1>
-            </div>
-            <div className="menu-items">
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">about</a>
-              </li>
-              <li>
-                <a href="#">blogs</a>
-              </li>
-              <li>
-                <a href="#">portfolio</a>
-              </li>
-              <li>
-                <a href="#">contact</a>
-              </li>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <MenuContainer>
+        <MenuLine
+          style={
+            scrollPosition > 5 ? { background: "rgb(255, 255, 255, 0.95)" } : {}
+          }
+        />
+        <MenuLine
+          style={
+            scrollPosition > 5 ? { background: "rgb(255, 255, 255, 0.95)" } : {}
+          }
+        />
+        <MenuLine
+          style={
+            scrollPosition > 5 ? { background: "rgb(255, 255, 255, 0.95)" } : {}
+          }
+        />
+      </MenuContainer>
     </Menu>
   );
 }

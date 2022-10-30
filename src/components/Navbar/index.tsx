@@ -8,7 +8,8 @@ import useWindowSize from "../../hooks/useWindowSize";
 
 export default function index({ page }: navbarType) {
   const scrollPosition = useScrollPosition();
-  const {width, height} = useWindowSize();
+  const { width } = useWindowSize();
+
   return (
     <Navbar
       style={
@@ -20,7 +21,7 @@ export default function index({ page }: navbarType) {
     >
       <Container>
         <Logo />
-        {/* {!screenSm ? (
+        {width > 600 ? (
           <Stack>
             <Anchor page={page} anchor="Home" href="/" />
             <Anchor page={page} anchor="About" href="/about" />
@@ -28,7 +29,7 @@ export default function index({ page }: navbarType) {
           </Stack>
         ) : (
           <Menu />
-        )} */}
+        )}
       </Container>
     </Navbar>
   );

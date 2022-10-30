@@ -6,6 +6,9 @@ max-width: 100vw;
   height: 20vh;
   background: #0D0D0D;
   margin-left: calc(50% - 50vw);
+  @media (max-width: 600px) {
+    height: fit-content;
+}
 
 `;
 
@@ -22,6 +25,8 @@ export const Container = styled.div`
   }
   @media (max-width: 600px) {
     padding: 0 5%;
+    flex-direction: column;
+    height: fit-content;
 }
 @media (max-width: 400px) {
     padding: 0 3%;
@@ -52,4 +57,7 @@ export const CardBox = styled.div`
   width: 100%;
   height: 100%;
   padding-left: 2rem;
+  @media (max-width: 600px) {
+    flex-direction: column;
+}
 `;

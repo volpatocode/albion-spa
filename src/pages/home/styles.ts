@@ -14,6 +14,10 @@ export const MainView = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  @media (max-width: 600px) {
+ max-height: none;
+ height: fit-content;
+}
 `;
 
 export const Content = styled.div`
@@ -28,6 +32,7 @@ export const Content = styled.div`
   }
   @media (max-width: 600px) {
     padding: 0 5%;
+    gap: 3rem;
 }
 @media (max-width: 400px) {
     padding: 0 3%;
@@ -39,17 +44,29 @@ export const MainContent = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 1rem;
+}
 `;
 
 export const Image = styled.img`
   width: 18%;
   margin-right: 3rem;
+  @media (max-width: 600px) {
+    order: -1;
+    width: 50%;
+    margin: 0;
+}
 `;
 
 export const TitleBox = styled.div`
   display: flex;
   flex-direction: column;
   width: fit-content;
+  @media (max-width: 600px) {
+    align-items: center;
+}
 `;
 
 export const Title = styled.h1`
