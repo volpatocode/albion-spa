@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const Card = styled.a`
-
-cursor: pointer;
-width: 100%;
-height: 100%;
-display: flex;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -23,24 +22,22 @@ display: flex;
   @media (max-width: 1000px) {
     width: 40%;
     :hover {
-    transform: scale(1.01);
-  }
+      transform: none;
+    }
   }
   @media (max-width: 600px) {
-    width: 80%;
-}
-
+    width: 60%;
+  }
 `;
 
 export const ProductName = styled.h5`
   font-size: 1.2rem;
   font-weight: bold;
   height: 10%;
-
 `;
 
 export const Image = styled.img`
-max-height:100%;
+  max-height: 100%;
   width: 100%;
   object-fit: contain;
   @media (max-width: 1000px) {

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { navbarType } from "../../types/types";
 
 export const Menu = styled.button`
   cursor: pointer;
@@ -17,7 +18,7 @@ export const MenuContainer = styled.div`
   justify-content: center;
 `;
 
-export const MenuLine = styled.div`
+export const MenuLine = styled.div<Pick<navbarType, "page">>`
   height: 4px;
   width: 100%;
   border-radius: 10px;

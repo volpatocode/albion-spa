@@ -28,7 +28,7 @@ export default function index({ page }: navbarType) {
             <Anchor page={page} anchor="Contact" href="/contact" />
           </Stack>
         ) : (
-          <Menu />
+          <Menu page={page} />
         )}
       </Container>
     </Navbar>

@@ -14,8 +14,8 @@ export const MainView = styled.div`
   flex-direction: column;
   gap: 3rem;
   @media (max-width: 600px) {
-  height: fit-content;
-}
+    height: fit-content;
+  }
 `;
 
 export const Content = styled.div`
@@ -31,10 +31,10 @@ export const Content = styled.div`
   }
   @media (max-width: 600px) {
     padding: 0 5%;
-}
-@media (max-width: 400px) {
+  }
+  @media (max-width: 400px) {
     padding: 0 3%;
-}
+  }
 `;
 
 export const MainContent = styled.div`
@@ -45,7 +45,7 @@ export const MainContent = styled.div`
   @media (max-width: 600px) {
     flex-direction: column;
     gap: 1rem;
-}
+  }
 `;
 
 export const Image = styled.img`
@@ -53,10 +53,10 @@ export const Image = styled.img`
   margin-right: 3rem;
   @media (max-width: 1000px) {
     margin: 0;
-}
+  }
   @media (max-width: 600px) {
     order: -1;
-}
+  }
 `;
 
 export const TitleBox = styled.div`
@@ -65,11 +65,11 @@ export const TitleBox = styled.div`
   width: fit-content;
   @media (max-width: 600px) {
     align-items: center;
-}
+  }
 `;
 
 export const Title = styled.h1`
   font-size: 4rem;
-  color: #0D0D0D;
+  color: #0d0d0d;
   letter-spacing: 2px;
 `;
