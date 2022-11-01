@@ -12,6 +12,8 @@ export const Navbar = styled.div<navbarType>`
         return "transparent";
       case "about":
         return "#0D0D0D";
+      case "contact":
+        return "#0D0D0D";
     }
   }};
   position: sticky;
@@ -29,10 +31,10 @@ export const Container = styled.div`
   }
   @media (max-width: 600px) {
     padding: 0 5%;
-}
-@media (max-width: 400px) {
+  }
+  @media (max-width: 400px) {
     padding: 0 3%;
-}
+  }
 `;
 
 export const Stack = styled.div`

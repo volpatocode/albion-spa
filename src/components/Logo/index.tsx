@@ -9,7 +9,9 @@ export default function index() {
   return (
     <Logo
       style={
-        scrollPosition > 5 || location.pathname == "/about"
+        scrollPosition > 5 ||
+        location.pathname == "/about" ||
+        location.pathname == "/contact"
           ? { color: "rgba(255, 255, 255, 0.95)" }
           : { color: "#0D0D0D" }
       }
