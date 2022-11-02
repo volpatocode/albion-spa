@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const PageWrapper = styled.div`
   background: #0d0d0d;
-  min-height: 100vh;
   height: fit-content;
   max-width: 100vw;
   width: 100vw;
@@ -11,9 +10,12 @@ export const PageWrapper = styled.div`
 `;
 
 export const MainContent = styled.div`
+  width: 100%;
+  min-height: 80vh;
   display: flex;
-  flex-direction: row;
-  gap: 3rem;
+  flex-direction: column;
+ justify-content: center;
+ gap: 1rem;
   padding: 0 15%;
   @media (max-width: 1000px) {
     padding: 0 10%;
@@ -26,22 +28,78 @@ export const MainContent = styled.div`
   }
 `;
 
-export const InfoWrapper = styled.div``;
+export const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
 
-export const FormWrapper = styled.div``;
+`;
+
+export const InfoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 50%;
+`;
+
+export const FormWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 50%;
+`;
 
 export const TitleBox = styled.div``;
 
-export const PageTitle = styled.h4``;
+export const PageTitle = styled.h4`
+  color: #eeb100;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+`;
 
-export const MainTitle = styled.h1``;
+export const MainTitle = styled.h1`
+  color: rgba(255, 255, 255, 0.95);
+`;
 
-export const Description = styled.p``;
+export const Description = styled.p`
+  color: rgba(255, 255, 255, 0.7);
+`;
 
-export const ContactBox = styled.div``;
+export const ContactBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+`;
 
-export const Input = styled.input``;
+export const Input = styled.input`
+  color: rgba(255, 255, 255, 0.95);
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.95);
+  padding: 6px 8px;
+  width: 100%;
+
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.95);
+  }
+`;
 
 export const TextInput = styled.textarea`
   resize: none;
+  color: rgba(255, 255, 255, 0.95);
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.95);
+  padding: 6px 8px;
+  width: 100%;
+
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.95);
+  }
 `;
