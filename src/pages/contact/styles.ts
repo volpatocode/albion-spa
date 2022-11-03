@@ -49,7 +49,6 @@ export const InfoWrapper = styled.div`
   @media (max-width: 1000px) {
     width: 100%;
   }
-  
 `;
 
 export const FormWrapper = styled.div`

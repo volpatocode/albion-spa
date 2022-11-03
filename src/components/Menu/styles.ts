@@ -5,7 +5,7 @@ export const Menu = styled.button`
   cursor: pointer;
   background: none;
   border: none;
-  padding: .5rem 0 .5rem .5rem;
+  padding: 0.5rem 0 0.5rem 0.5rem;
 `;
 
 export const MenuContainer = styled.div`
@@ -22,8 +22,6 @@ export const MenuLine = styled.div<Pick<navbarType, "page">>`
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: #0D0D0D;
+  background: #0d0d0d;
   transition: all 300ms ease-in-out;
 `;
-
-

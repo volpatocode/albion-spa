@@ -20,6 +20,10 @@ export const PageWrapper = styled.div`
   );
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 1000px) {
+    background: #0d0d0d;
+  }
 `;
 
 export const MainView = styled.div`
@@ -41,13 +45,14 @@ export const Content = styled.div`
   justify-self: center;
   @media (max-width: 1000px) {
     padding: 0 10%;
+    flex-direction: column;
   }
   @media (max-width: 600px) {
     padding: 0 5%;
-}
-@media (max-width: 400px) {
+  }
+  @media (max-width: 400px) {
     padding: 0 3%;
-}
+  }
 `;
 
 export const Info = styled.div`
@@ -55,6 +60,10 @@ export const Info = styled.div`
   flex-direction: column;
   gap: 1rem;
   width: 50%;
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+  
 `;
 
 export const Row = styled.div`

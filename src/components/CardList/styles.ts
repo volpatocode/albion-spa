@@ -1,17 +1,16 @@
 import styled from "styled-components";
 
 export const CardList = styled.div`
-max-width: 100vw;
+  max-width: 100vw;
   width: 100vw;
-  background: #0D0D0D;
+  background: #0d0d0d;
   padding: 2rem 0;
   margin-left: calc(50% - 50vw);
   margin-bottom: 3rem;
-
 `;
 
 export const Container = styled.div`
- display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -25,11 +24,10 @@ export const Container = styled.div`
   }
   @media (max-width: 600px) {
     padding: 0 5%;
-}
-@media (max-width: 400px) {
+  }
+  @media (max-width: 400px) {
     padding: 0 3%;
-}
-
+  }
 `;
 
 export const InfoBox = styled.div`
@@ -43,7 +41,7 @@ export const InfoBox = styled.div`
   @media (max-width: 1000px) {
     border: none;
     border-bottom: 0.4px solid rgb(255, 255, 255, 0.95);
-}
+  }
 `;
 
 export const Info = styled.h3`
@@ -62,5 +60,5 @@ export const CardBox = styled.div`
   @media (max-width: 1000px) {
     flex-direction: column;
     padding-left: 0rem;
-}
+  }
 `;
