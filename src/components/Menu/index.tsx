@@ -17,21 +17,30 @@ export default function index({ page }: navbarType) {
       <MenuContainer>
         <MenuLine
           style={
-            scrollPosition > 5 || page == "product" || page == "about"
+            scrollPosition > 5 ||
+            page == "product" ||
+            page == "about" ||
+            page == "contact"
               ? { background: "rgb(255, 255, 255, 0.95)" }
               : { background: "#0D0D0D" }
           }
         />
         <MenuLine
           style={
-            scrollPosition > 5 || page == "product" || page == "about"
+            scrollPosition > 5 ||
+            page == "product" ||
+            page == "about" ||
+            page == "contact"
               ? { background: "rgb(255, 255, 255, 0.95)" }
               : { background: "#0D0D0D" }
           }
         />
         <MenuLine
           style={
-            scrollPosition > 5 || page == "product" || page == "about"
+            scrollPosition > 5 ||
+            page == "product" ||
+            page == "about" ||
+            page == "contact"
               ? { background: "rgb(255, 255, 255, 0.95)" }
               : { background: "#0D0D0D" }
           }
