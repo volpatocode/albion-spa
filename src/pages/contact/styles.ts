@@ -14,8 +14,8 @@ export const MainContent = styled.div`
   min-height: 80vh;
   display: flex;
   flex-direction: column;
- justify-content: center;
- gap: 1rem;
+  justify-content: center;
+  gap: 1rem;
   padding: 0 15%;
   @media (max-width: 1000px) {
     padding: 0 10%;
@@ -36,7 +36,9 @@ export const ContentWrapper = styled.div`
   align-items: center;
   justify-content: space-around;
   gap: 3rem;
-
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 `;
 
 export const InfoWrapper = styled.div`
@@ -44,6 +46,10 @@ export const InfoWrapper = styled.div`
   flex-direction: column;
   gap: 1.5rem;
   width: 50%;
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+  
 `;
 
 export const FormWrapper = styled.div`
@@ -51,6 +57,9 @@ export const FormWrapper = styled.div`
   flex-direction: column;
   gap: 1.5rem;
   width: 50%;
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
 `;
 
 export const TitleBox = styled.div``;
@@ -102,4 +111,13 @@ export const TextInput = styled.textarea`
   ::placeholder {
     color: rgba(255, 255, 255, 0.95);
   }
+`;
+
+export const Button = styled.button`
+  width: 100%;
+  padding: 6px 8px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #0d0d0d;
+  font-weight: bold;
+  font-size: 1.1rem;
 `;

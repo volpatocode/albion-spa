@@ -11,6 +11,7 @@ import {
   PageWrapper,
   TextInput,
   TitleBox,
+  Button,
 } from "./styles";
 
 import Footer from "../../components/Footer";
@@ -32,7 +33,7 @@ export default function Home() {
             <ContactBox>
               <Contact type="number" info="+1 012 345 678" />
               <Contact type="email" info="contact@lupus.com" />
-              <Contact type="insta" info="lupus" />
+              <Contact type="insta" info="@lupus" />
             </ContactBox>
           </InfoWrapper>
           <FormWrapper>
@@ -42,6 +43,7 @@ export default function Home() {
             <TextInput placeholder="Message" />
           </FormWrapper>
         </ContentWrapper>
+          <Button type="submit">Submit</Button>
       </MainContent>
       <Footer />
     </PageWrapper>
