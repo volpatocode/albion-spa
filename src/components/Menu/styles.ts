@@ -25,3 +25,4 @@ export const MenuLine = styled.div<Pick<navbarType, "page">>`
   background: #0d0d0d;
   transition: all 300ms ease-in-out;
 `;
+
