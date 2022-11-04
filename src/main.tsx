@@ -11,9 +11,6 @@ const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    :visited {
-    color: initial;
-  }
   }
   body {
     background: rgba(255, 255, 255, 0.95);
