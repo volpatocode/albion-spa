@@ -36,7 +36,7 @@ export const Stack = styled.div`
 
 export const ModalAnchor = styled.a`
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.95);
+  color:rgba(255, 255, 255, 0.95) !important;
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;

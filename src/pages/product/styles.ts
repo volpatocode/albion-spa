@@ -63,7 +63,6 @@ export const Info = styled.div`
   @media (max-width: 1000px) {
     width: 100%;
   }
-  
 `;
 
 export const Row = styled.div`
@@ -157,4 +156,10 @@ export const Price = styled.h2`
 export const Image = styled.img`
   width: 20%;
   margin: 3rem;
+  @media (max-width: 1000px) {
+    width: 30%;
+  }
+  @media (max-width: 600px) {
+    width: 50%;
+  }
 `;

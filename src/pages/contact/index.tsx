@@ -43,7 +43,7 @@ export default function Home() {
             <TextInput placeholder="Message" />
           </FormWrapper>
         </ContentWrapper>
-          <Button type="submit">Submit</Button>
+        <Button type="submit">Submit</Button>
       </MainContent>
       <Footer />
     </PageWrapper>

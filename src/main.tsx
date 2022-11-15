@@ -12,9 +12,14 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
   }
+
+  a, a:visited{
+  color: inherit;
+  }
+  
   body {
     background: rgba(255, 255, 255, 0.95);
-}
+  }
   
 `;
 

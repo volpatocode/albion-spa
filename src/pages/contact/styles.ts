@@ -113,10 +113,19 @@ export const TextInput = styled.textarea`
 `;
 
 export const Button = styled.button`
+  cursor: pointer;
   width: 100%;
   padding: 6px 8px;
   background: rgba(255, 255, 255, 0.95);
   color: #0d0d0d;
   font-weight: bold;
   font-size: 1.1rem;
+  transition: all 300ms ease-in-out;
+  border: 1px solid transparent;
+
+  :hover {
+    background-color: #0d0d0d;
+    color: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.95);
+  }
 `;

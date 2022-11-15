@@ -28,9 +28,7 @@ export default function Product() {
   return (
     <PageWrapper>
       <MainView>
-        <Navbar
-          page="product"
-        />
+        <Navbar page="product" />
         {products.map((product) => {
           return (
             product.id == productId && (

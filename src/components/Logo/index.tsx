@@ -12,8 +12,8 @@ export default function index() {
     <Logo
       style={
         scrollPosition > 5 ||
-        location.pathname == "/about" ||
-        location.pathname == "/contact" ||
+        location.pathname.includes("about") ||
+        location.pathname.includes("contact") ||
         (location.pathname.includes("catalogue") && width < 1000)
           ? { color: "rgba(255, 255, 255, 0.95)" }
           : { color: "#0D0D0D" }

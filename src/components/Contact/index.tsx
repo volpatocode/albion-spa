@@ -11,9 +11,9 @@ type contactType = {
 
 export default function index({ type, info }: contactType) {
   const icon = {
-    number: mdiInstagram,
+    number: mdiCellphone,
     email: mdiEmail,
-    insta: mdiCellphone,
+    insta: mdiInstagram,
   };
 
   return (
